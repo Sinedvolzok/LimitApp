@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5361996B2B29E80400EF9CDE /* LAInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5361996A2B29E80400EF9CDE /* LAInputViewController.swift */; };
+		5361996D2B29E85A00EF9CDE /* LAHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5361996C2B29E85900EF9CDE /* LAHistoryViewController.swift */; };
+		5361996F2B29E8AC00EF9CDE /* LASettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5361996E2B29E8AB00EF9CDE /* LASettingsViewController.swift */; };
+		536199722B2A0C3300EF9CDE /* LATabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536199712B2A0C3300EF9CDE /* LATabBarController.swift */; };
 		53DD66372B1867D500495DA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DD66362B1867D500495DA3 /* AppDelegate.swift */; };
 		53DD66392B1867D500495DA3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DD66382B1867D500495DA3 /* SceneDelegate.swift */; };
-		53DD663B2B1867D500495DA3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DD663A2B1867D500495DA3 /* ViewController.swift */; };
+		53DD663B2B1867D500495DA3 /* LARootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DD663A2B1867D500495DA3 /* LARootViewController.swift */; };
 		53DD66412B1867D500495DA3 /* LimitApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 53DD663F2B1867D500495DA3 /* LimitApp.xcdatamodeld */; };
 		53DD66432B1867DB00495DA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53DD66422B1867DB00495DA3 /* Assets.xcassets */; };
 		53DD66462B1867DB00495DA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53DD66442B1867DB00495DA3 /* LaunchScreen.storyboard */; };
@@ -36,10 +40,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5361996A2B29E80400EF9CDE /* LAInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LAInputViewController.swift; sourceTree = "<group>"; };
+		5361996C2B29E85900EF9CDE /* LAHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LAHistoryViewController.swift; sourceTree = "<group>"; };
+		5361996E2B29E8AB00EF9CDE /* LASettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LASettingsViewController.swift; sourceTree = "<group>"; };
+		536199712B2A0C3300EF9CDE /* LATabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LATabBarController.swift; sourceTree = "<group>"; };
 		53DD66332B1867D400495DA3 /* LimitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LimitApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53DD66362B1867D500495DA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53DD66382B1867D500495DA3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		53DD663A2B1867D500495DA3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		53DD663A2B1867D500495DA3 /* LARootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LARootViewController.swift; sourceTree = "<group>"; };
 		53DD66402B1867D500495DA3 /* LimitApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LimitApp.xcdatamodel; sourceTree = "<group>"; };
 		53DD66422B1867DB00495DA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		53DD66452B1867DB00495DA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -76,6 +84,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		536199702B29E96D00EF9CDE /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				53DD663A2B1867D500495DA3 /* LARootViewController.swift */,
+				5361996A2B29E80400EF9CDE /* LAInputViewController.swift */,
+				5361996C2B29E85900EF9CDE /* LAHistoryViewController.swift */,
+				5361996E2B29E8AB00EF9CDE /* LASettingsViewController.swift */,
+				536199712B2A0C3300EF9CDE /* LATabBarController.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 		53DD662A2B1867D400495DA3 = {
 			isa = PBXGroup;
 			children = (
@@ -106,11 +126,6 @@
 				53DD666B2B19B19800495DA3 /* Views */,
 				53DD666A2B19B19400495DA3 /* Models */,
 				53DD66692B19B18D00495DA3 /* Controllers */,
-				53DD66362B1867D500495DA3 /* AppDelegate.swift */,
-				53DD66382B1867D500495DA3 /* SceneDelegate.swift */,
-				53DD663A2B1867D500495DA3 /* ViewController.swift */,
-				53DD66422B1867DB00495DA3 /* Assets.xcassets */,
-				53DD66442B1867DB00495DA3 /* LaunchScreen.storyboard */,
 				53DD66472B1867DB00495DA3 /* Info.plist */,
 				53DD663F2B1867D500495DA3 /* LimitApp.xcdatamodeld */,
 			);
@@ -137,6 +152,7 @@
 		53DD66692B19B18D00495DA3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				536199702B29E96D00EF9CDE /* Core */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -179,6 +195,10 @@
 		53DD666F2B19B1F800495DA3 /* Resuorces */ = {
 			isa = PBXGroup;
 			children = (
+				53DD66362B1867D500495DA3 /* AppDelegate.swift */,
+				53DD66382B1867D500495DA3 /* SceneDelegate.swift */,
+				53DD66422B1867DB00495DA3 /* Assets.xcassets */,
+				53DD66442B1867DB00495DA3 /* LaunchScreen.storyboard */,
 			);
 			name = Resuorces;
 			sourceTree = "<group>";
@@ -313,8 +333,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53DD663B2B1867D500495DA3 /* ViewController.swift in Sources */,
+				536199722B2A0C3300EF9CDE /* LATabBarController.swift in Sources */,
+				53DD663B2B1867D500495DA3 /* LARootViewController.swift in Sources */,
+				5361996B2B29E80400EF9CDE /* LAInputViewController.swift in Sources */,
+				5361996F2B29E8AC00EF9CDE /* LASettingsViewController.swift in Sources */,
 				53DD66412B1867D500495DA3 /* LimitApp.xcdatamodeld in Sources */,
+				5361996D2B29E85A00EF9CDE /* LAHistoryViewController.swift in Sources */,
 				53DD66372B1867D500495DA3 /* AppDelegate.swift in Sources */,
 				53DD66392B1867D500495DA3 /* SceneDelegate.swift in Sources */,
 			);
