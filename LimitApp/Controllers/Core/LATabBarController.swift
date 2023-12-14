@@ -40,13 +40,22 @@ class LATabBarController: UITabBarController {
         inputNavigation.navigationBar.prefersLargeTitles = true
         settingsNavigation.navigationBar.prefersLargeTitles = true
         
-        setViewControllers([
-            historyNavigation,
-            inputNavigation,
-            settingsNavigation
-        ], animated: true)
-        
-        selectedViewController = inputNavigation
+        switch UIDevice.current.userInterfaceIdiom {
+        case .pad:
+            setViewControllers([
+                historyNavigation,
+                settingsNavigation
+            ], animated: true)
+            selectedViewController = historyNavigation
+        case .phone:
+            setViewControllers([
+                historyNavigation,
+                inputNavigation,
+                settingsNavigation
+            ], animated: true)
+            selectedViewController = inputNavigation
+        default:
+            fatalError("Devise is not supported!")
+        }
     }
-
 }
