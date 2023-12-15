@@ -35,6 +35,21 @@ class LARootViewController: UIViewController {
         }
     }
     
+    private let orientation:UIInterfaceOrientationMask = {
+        var orient = UIInterfaceOrientationMask()
+        switch UIDevice.current.userInterfaceIdiom {
+        case .phone:
+            orient = .portrait
+        default:
+            orient = .all
+        }
+        return orient
+    }()
+    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        orientation
+    }
+    
     func setUpForPad() {
         print("SetUP iPad")
         addChild(current)

@@ -20,7 +20,7 @@
 		53DD66512B1867DC00495DA3 /* LimitAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DD66502B1867DC00495DA3 /* LimitAppTests.swift */; };
 		53DD665B2B1867DC00495DA3 /* LimitAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DD665A2B1867DC00495DA3 /* LimitAppUITests.swift */; };
 		53DD665D2B1867DC00495DA3 /* LimitAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DD665C2B1867DC00495DA3 /* LimitAppUITestsLaunchTests.swift */; };
-		53F93FEA2B2B621000130707 /* LAInputViewModell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F93FE92B2B620F00130707 /* LAInputViewModell.swift */; };
+		53F93FEA2B2B621000130707 /* LAInputViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F93FE92B2B620F00130707 /* LAInputViewModel.swift */; };
 		53F93FEC2B2B627900130707 /* LAButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F93FEB2B2B627700130707 /* LAButtonCell.swift */; };
 		53F93FEE2B2B635D00130707 /* LAInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F93FED2B2B635D00130707 /* LAInputCell.swift */; };
 		53F93FF02B2B642300130707 /* LAInputButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F93FEF2B2B642300130707 /* LAInputButton.swift */; };
@@ -61,7 +61,7 @@
 		53DD66562B1867DC00495DA3 /* LimitAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LimitAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		53DD665A2B1867DC00495DA3 /* LimitAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimitAppUITests.swift; sourceTree = "<group>"; };
 		53DD665C2B1867DC00495DA3 /* LimitAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimitAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		53F93FE92B2B620F00130707 /* LAInputViewModell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LAInputViewModell.swift; sourceTree = "<group>"; };
+		53F93FE92B2B620F00130707 /* LAInputViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LAInputViewModel.swift; sourceTree = "<group>"; };
 		53F93FEB2B2B627700130707 /* LAButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LAButtonCell.swift; sourceTree = "<group>"; };
 		53F93FED2B2B635D00130707 /* LAInputCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LAInputCell.swift; sourceTree = "<group>"; };
 		53F93FEF2B2B642300130707 /* LAInputButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LAInputButton.swift; sourceTree = "<group>"; };
@@ -185,7 +185,7 @@
 		53DD666C2B19B19B00495DA3 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				53F93FE92B2B620F00130707 /* LAInputViewModell.swift */,
+				53F93FE92B2B620F00130707 /* LAInputViewModel.swift */,
 			);
 			name = ViewModels;
 			sourceTree = "<group>";
@@ -354,7 +354,7 @@
 				53DD66412B1867D500495DA3 /* LimitApp.xcdatamodeld in Sources */,
 				5361996D2B29E85A00EF9CDE /* LAHistoryViewController.swift in Sources */,
 				53DD66372B1867D500495DA3 /* AppDelegate.swift in Sources */,
-				53F93FEA2B2B621000130707 /* LAInputViewModell.swift in Sources */,
+				53F93FEA2B2B621000130707 /* LAInputViewModel.swift in Sources */,
 				53DD66392B1867D500495DA3 /* SceneDelegate.swift in Sources */,
 				53F93FEE2B2B635D00130707 /* LAInputCell.swift in Sources */,
 			);

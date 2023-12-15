@@ -11,4 +11,6 @@ class LAInputCell: UICollectionReusableView {
        
     static let identifer = "InputCell"
     
+    
+    
 }
