@@ -10,10 +10,10 @@ import UIKit
 class LAButtonCell: UICollectionViewCell {
     
     static let identifer = "ButtonCell"
-    // MARK: Variables
+    // MARK: - Variables
     private(set) var inputButton: LAInputButton!
     
-    // MARK: UI Components
+    // MARK: - UI Components
     private let titleLaleble:UILabel = {
         let label = UILabel()
         label.textAlignment = .center
@@ -22,13 +22,13 @@ class LAButtonCell: UICollectionViewCell {
         return label
     }()
     
-    // MARK: Configure
+    // MARK: - Configure
     public func configure(whith inputButton: LAInputButton) {
         self.inputButton = inputButton
         
         self.titleLaleble.text = inputButton.title
         self.backgroundColor = inputButton.color
-        self.titleLaleble.textColor = .label
+        self.titleLaleble.textColor = inputButton.labelColor
         setupUI()
     }
     

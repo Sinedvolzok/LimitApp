@@ -9,10 +9,10 @@ import UIKit
 
 class LAInputViewController: UIViewController {
     
-    // MARK: Variables
+    // MARK: - Variables
     let viewModel:LAInputViewModel
     
-    // MARK: UI Compponents
+    // MARK: - UI Compponents
     private let collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
@@ -24,7 +24,7 @@ class LAInputViewController: UIViewController {
         return collectionView
     }()
     
-    // MARK: Lifecycle
+    // MARK: - Lifecycle
     init(_ viewModel: LAInputViewModel = LAInputViewModel()) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
@@ -43,7 +43,7 @@ class LAInputViewController: UIViewController {
         collectionView.dataSource = self
     }
     
-    // MARK: UI Setup
+    // MARK: - UI Setup
     private func setupUI() {
         view.addSubview(collectionView)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
@@ -56,10 +56,32 @@ class LAInputViewController: UIViewController {
         ])
     }
 }
-// MARK: CollectionView Methods
+// MARK: - CollectionView Methods
 extension LAInputViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
-    // MARK: Regular Cells Buttons
+    // MARK: - Section Header Cell
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        guard let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: LAInputCell.identifer, for: indexPath) as? LAInputCell else {
+            fatalError("Fail to dequeue LAInputCell in LAInputViewController.")
+        }
+        header.configure(curentInputText: viewModel.inputHeader)
+        return header
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        let totalCellHeigth = view.frame.size.width
+        let totalVerticalCellSpacing = CGFloat(50*4)
+        let avalibleScreenHeigth = view.frame.size.height
+        let headerHeigth = avalibleScreenHeigth - totalCellHeigth - totalVerticalCellSpacing
+        
+        return CGSize(width: view.frame.size.width, height: headerHeigth)
+    }
+    
+    // MARK: - Regular Cells Buttons
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return viewModel.inputButtonCells.count
     }
@@ -88,8 +110,22 @@ extension LAInputViewController: UICollectionViewDelegate, UICollectionViewDataS
         }
     }
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 10
+    }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return (self.view.frame.width/5)/6
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let buttonCell = self.viewModel.inputButtonCells[indexPath.row]
+        
+        print(buttonCell.title)
+        
+        DispatchQueue.main.async {
+            self.collectionView.reloadData()
+        }
     }
     
 }

@@ -23,7 +23,7 @@ enum LAInputButton {
         case .number(let int):
             if int.description.count == 1 {
                 self = inputButton
-            } else { fatalError("InputButton was not 1 digit during init")}
+            } else {fatalError("InputButton was not 1 digit during init")}
         }
     }
 }
@@ -42,12 +42,19 @@ extension LAInputButton {
     
     var color: UIColor {
         switch self {
-        case.add,.subtract,.backspace:
-            return .systemPink
-        case .number(_),.decimal:
-            return .systemGray3
+        case .number(_),.decimal,.add,.subtract,.backspace:
+            return .systemGroupedBackground
         case .enter:
-            return .systemOrange
+            return .label
+        }
+    }
+    
+    var labelColor: UIColor {
+        switch self {
+        case .number(_),.decimal,.add,.subtract,.backspace:
+            return .label
+        case .enter:
+            return .systemBackground
         }
     }
 }

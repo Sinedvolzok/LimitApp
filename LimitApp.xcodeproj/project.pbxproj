@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		535BD55C2B4AE69B00C23A60 /* LAFondCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535BD55B2B4AE69B00C23A60 /* LAFondCell.swift */; };
 		5361996B2B29E80400EF9CDE /* LAInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5361996A2B29E80400EF9CDE /* LAInputViewController.swift */; };
 		5361996D2B29E85A00EF9CDE /* LAHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5361996C2B29E85900EF9CDE /* LAHistoryViewController.swift */; };
 		5361996F2B29E8AC00EF9CDE /* LASettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5361996E2B29E8AB00EF9CDE /* LASettingsViewController.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		535BD55B2B4AE69B00C23A60 /* LAFondCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LAFondCell.swift; sourceTree = "<group>"; };
 		5361996A2B29E80400EF9CDE /* LAInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LAInputViewController.swift; sourceTree = "<group>"; };
 		5361996C2B29E85900EF9CDE /* LAHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LAHistoryViewController.swift; sourceTree = "<group>"; };
 		5361996E2B29E8AB00EF9CDE /* LASettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LASettingsViewController.swift; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 			children = (
 				53F93FEB2B2B627700130707 /* LAButtonCell.swift */,
 				53F93FED2B2B635D00130707 /* LAInputCell.swift */,
+				535BD55B2B4AE69B00C23A60 /* LAFondCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 				53F93FF02B2B642300130707 /* LAInputButton.swift in Sources */,
 				53F93FEC2B2B627900130707 /* LAButtonCell.swift in Sources */,
 				5361996F2B29E8AC00EF9CDE /* LASettingsViewController.swift in Sources */,
+				535BD55C2B4AE69B00C23A60 /* LAFondCell.swift in Sources */,
 				53DD66412B1867D500495DA3 /* LimitApp.xcdatamodeld in Sources */,
 				5361996D2B29E85A00EF9CDE /* LAHistoryViewController.swift in Sources */,
 				53DD66372B1867D500495DA3 /* AppDelegate.swift in Sources */,
